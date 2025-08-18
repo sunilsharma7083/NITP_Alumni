@@ -1,5 +1,4 @@
 import React from 'react';
-import { CakeIcon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const API_URL = process.env.REACT_APP_API_URL.replace("/api", "");
 
