@@ -34,10 +34,10 @@ const [loading, setLoading] = useState(false);
         await notificationService.markOneAsRead(notification._id);
         refreshNotifications();
       }
-      
+
       // Close the notification panel
       onClose();
-      
+
       // Navigate based on notification type
       if (notification.post && notification.post._id) {
         navigate(`/posts/${notification.post._id}`);

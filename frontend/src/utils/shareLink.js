@@ -4,7 +4,7 @@ export async function shareLink(
   { title = document.title, text = '' } = {}
 ) {
   if (!url) return false;
-  
+
 //   console.log("Sharing URL:", url);
 //   console.log("Share title:", title);
 //   console.log("Share text:", text);
@@ -14,22 +14,22 @@ export async function shareLink(
     // console.log("Using Web Share API");
     try {
       const shareData = { title, text, url };
-      
+
       // Check if the data can be shared
       if (navigator.canShare && !navigator.canShare(shareData)) {
         throw new Error("Data cannot be shared");
       }
-      
+
       await navigator.share(shareData);
       return true;
     } catch (error) {
       console.error("Web Share API failed:", error);
-      
+
       // If user cancels the share, don't fall back to clipboard
       if (error.name === 'AbortError') {
         return false;
       }
-      
+
       // Fall back to clipboard for other errors
       try {
         await navigator.clipboard.writeText(url);
@@ -47,7 +47,7 @@ export async function shareLink(
     return 'copied';
   } catch (clipboardError) {
     console.error("Clipboard copy failed:", clipboardError);
-    
+
     // Last resort: manual copy for older browsers
     try {
       const textArea = document.createElement('textarea');

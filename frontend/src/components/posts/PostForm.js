@@ -16,7 +16,7 @@ export default function PostForm({ onPostCreated }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!formData.title.trim() || !formData.content.trim()) {
       toast.error("Please fill in all fields");
       return;
@@ -27,7 +27,7 @@ export default function PostForm({ onPostCreated }) {
       await postService.createPost(formData);
       toast.success("Post created successfully!");
       setFormData({ title: "", content: "", category: "News Update" });
-      
+
       // Call the callback to refresh the feed
       if (onPostCreated) {
         onPostCreated();
@@ -53,7 +53,7 @@ export default function PostForm({ onPostCreated }) {
             className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-primary/20 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-sm sm:text-base"
           />
         </div>
-        
+
         <div>
           <textarea
             name="content"

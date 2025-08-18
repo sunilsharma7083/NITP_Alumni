@@ -22,7 +22,7 @@ export const NotificationProvider = ({ children }) => {
                 const res = await notificationService.getNotifications();
                 setNotifications(res.data.data);
                 setUnreadCount(res.data.data.filter(n => !n.read).length);
-            } catch (error) { 
+            } catch (error) {
                 console.error("Failed to fetch notifications:", error);
                 setError("Failed to load notifications. Please try again.");
             } finally {
@@ -69,18 +69,18 @@ export const NotificationProvider = ({ children }) => {
             await notificationService.markAsRead();
             setNotifications(notifications.map(n => ({ ...n, read: true })));
             setUnreadCount(0);
-        } catch (error) { 
+        } catch (error) {
             console.error("Failed to mark notifications as read:", error);
             // Don't update state if the API call failed
         }
     };
 
-    const value = { 
-        notifications, 
-        unreadCount, 
-        loading, 
-        error, 
-        markAllAsRead, 
+    const value = {
+        notifications,
+        unreadCount,
+        loading,
+        error,
+        markAllAsRead,
         refreshNotifications: fetchNotifications,
         clearError: () => setError(null)
     };

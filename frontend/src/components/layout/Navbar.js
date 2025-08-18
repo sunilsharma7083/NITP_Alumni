@@ -2,7 +2,7 @@ import React, { Fragment, useState, useRef, useEffect } from "react";
 import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import logo1 from "../../Assets/logo1.png"
+import logo1 from "../../Assets/logo1.png";
 import {
   Bars3Icon,
   XMarkIcon,
@@ -80,7 +80,7 @@ export default function Navbar() {
                   to="/"
                   className="text-lg sm:text-xl lg:text-2xl font-extrabold bg-gradient-to-r from-primary-600 via-primary-500 to-accent-500 bg-clip-text text-transparent flex items-center shrink-0"
                 >
-              
+
                   <div className="w-10 h-10 sm:w-12 sm:h-12 mr-2 rounded-xl  from-primary-500 to-accent-500 flex items-center justify-center shadow-medium">
                     {/* <span className="text-white font-bold text-lg sm:text-xl">NIT</span> */}
                     <img src={logo1} alt="NIT Patna" className="w-8 h-8 sm:w-10 sm:h-10 object-cover rounded-full" />

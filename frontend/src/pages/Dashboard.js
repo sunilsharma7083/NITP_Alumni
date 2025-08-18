@@ -28,20 +28,20 @@ export default function Dashboard() {
 
   const fetchPosts = useCallback(async (page = 1, shouldRefresh = false) => {
     if (isRequestInProgress.current) return;
-    
+
     isRequestInProgress.current = true;
     setError(null);
-    
+
     if (page === 1) {
       setLoading(shouldRefresh ? false : true);
     } else {
       setLoadingMore(true);
     }
-    
+
     try {
       const res = await postService.getPosts(page, POSTS_PER_PAGE);
       const newPosts = res.data.data || res.data || [];
-      
+
       if (page === 1) {
         // First page or refresh - replace all posts
         setPosts(newPosts);
@@ -54,14 +54,14 @@ export default function Dashboard() {
           return [...prevPosts, ...uniqueNewPosts];
         });
       }
-      
+
       // Update hasMore based on response
       setHasMore(newPosts.length === POSTS_PER_PAGE);
-      
+
     } catch (error) {
       console.error("Error fetching posts:", error);
       setError(error.message || "Failed to load posts");
-      
+
       if (page === 1) {
         toast.error("Could not load posts.");
       } else {
@@ -91,7 +91,7 @@ export default function Dashboard() {
   const lastPostElementObserver = useCallback(node => {
     if (loading || loadingMore || !hasMore) return;
     if (observer.current) observer.current.disconnect();
-    
+
     observer.current = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting && hasMore && !isRequestInProgress.current) {
         setCurrentPage(prevPage => {
@@ -104,7 +104,7 @@ export default function Dashboard() {
       threshold: 0.1,
       rootMargin: '200px' // Trigger earlier for smoother UX
     });
-    
+
     if (node) observer.current.observe(node);
   }, [loading, loadingMore, hasMore, fetchPosts]);
 
@@ -254,9 +254,9 @@ export default function Dashboard() {
               {posts.length > 0 ? (
                 <div className="space-y-4 sm:space-y-6">
                   {posts.map((post, index) => (
-                      <PostCard key={post._id} post={post} refreshFeed={handleDataRefresh} />  
+                      <PostCard key={post._id} post={post} refreshFeed={handleDataRefresh} />
                   ))}
-                  
+
                   {/* Loading more indicator */}
                   {loadingMore && (
                     <div className="flex justify-center py-6 sm:py-8">
@@ -266,7 +266,7 @@ export default function Dashboard() {
                       </div>
                     </div>
                   )}
-                  
+
                   {/* Load More Button - only show if not loading and has more posts */}
                   {!loadingMore && hasMore && posts.length > 0 && (
                     <div className="flex justify-center py-4 sm:py-6">
@@ -282,7 +282,7 @@ export default function Dashboard() {
                       </button>
                     </div>
                   )}
-                  
+
                   {/* End of feed indicator */}
                   {!hasMore && !loadingMore && posts.length > 0 && (
                     <div className="text-center py-6 sm:py-8">

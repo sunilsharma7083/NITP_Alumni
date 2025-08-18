@@ -221,7 +221,7 @@ export default function AlumniDirectory() {
               {Object.values(filters).some(value => value !== "") && (
                 <div className="flex items-center gap-2 text-sm text-gray-600">
                   <span>Active filters:</span>
-                  {Object.entries(filters).map(([key, value]) => 
+                  {Object.entries(filters).map(([key, value]) =>
                     value && (
                       <span key={key} className="inline-flex items-center gap-1 px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs">
                         {filterOptions.find(opt => opt.value === key)?.label}: {value}

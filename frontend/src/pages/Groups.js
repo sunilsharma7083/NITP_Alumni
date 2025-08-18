@@ -7,14 +7,14 @@ import Spinner from '../components/common/Spinner';
 import { UsersIcon, ArrowRightIcon, PlusIcon, UserGroupIcon, ChatBubbleLeftIcon } from '@heroicons/react/24/solid';
 import useAuth from '../hooks/useAuth';
 import CreateGroupModal from '../components/groups/CreateGroupModal';
-import GroupMembersModal from '../components/groups/GroupMembersModal'; 
+import GroupMembersModal from '../components/groups/GroupMembersModal';
 
 export default function Groups() {
     const [groups, setGroups] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [joiningGroupId, setJoiningGroupId] = useState(null); 
+    const [joiningGroupId, setJoiningGroupId] = useState(null);
     const [isCreateModalOpen, setCreateModalOpen] = useState(false);
-    const [viewingMembersOf, setViewingMembersOf] = useState(null); 
+    const [viewingMembersOf, setViewingMembersOf] = useState(null);
 
     const { user } = useAuth();
 

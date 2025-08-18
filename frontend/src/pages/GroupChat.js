@@ -199,9 +199,9 @@ export default function GroupChat() {
                             />
                         </MentionsInput>
                     </div>
-                    <button 
-                        type="submit" 
-                        className="p-2.5 sm:p-3 bg-primary rounded-full text-white hover:bg-primary-dark transition-colors disabled:opacity-50" 
+                    <button
+                        type="submit"
+                        className="p-2.5 sm:p-3 bg-primary rounded-full text-white hover:bg-primary-dark transition-colors disabled:opacity-50"
                         disabled={!newMessage.trim()}
                         style={{ minWidth: '44px', width: '44px', height: '44px', flexShrink: 0 }}
                     >

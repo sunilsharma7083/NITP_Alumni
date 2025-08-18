@@ -23,7 +23,7 @@ import { NotificationProvider } from './context/NotificationContext';
 import NotificationsPage from './pages/NotificationsPage';
 import PostPage from './pages/PostPage';
 import ResetPassword from './pages/ResetPassword';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
 
@@ -98,8 +98,8 @@ const MainContent = () => {
         <Route path="/reset-password/:token" element={<ResetPassword />} />
       </Routes>
     </main>
-  )
-}
+  );
+};
 
 export default App;
 

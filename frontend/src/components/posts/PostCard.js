@@ -60,14 +60,14 @@ export default function PostCard({ post, refreshFeed }) {
 
   const handleLike = async () => {
     if (likeLoading) return;
-    
+
     setLikeLoading(true);
     const originalLikes = [...likes];
     const newLikes = isLiked
       ? likes.filter((id) => id !== loggedInUser._id)
       : [...likes, loggedInUser._id];
 
-    setLikes(newLikes); 
+    setLikes(newLikes);
 
     try {
       const res = await postService.likePost(post._id);
@@ -98,10 +98,10 @@ export default function PostCard({ post, refreshFeed }) {
   };
 
   const handleShare = async () => {
-    if (isSharing) return; 
-    
+    if (isSharing) return;
+
     setIsSharing(true);
-    
+
     try {
       const result = await shareLink(
         `${window.location.origin}/posts/${post._id}`,
@@ -110,7 +110,7 @@ export default function PostCard({ post, refreshFeed }) {
           text: post.content.slice(0, 120) + (isLongPost ? "…" : ""),
         }
       );
-      
+
       // console.log("Share result:", result);
 
       if (result === true) {

@@ -13,7 +13,7 @@ export default function NotificationsPage() {
         let text = '';
         let link = '/';
         let isValidLink = false;
-        
+
         switch (n.type) {
             case 'new_like':
                 text = <><strong>{n.sender.fullName}</strong> liked your post: <strong>"{n.post?.title || 'your post'}"</strong></>;
@@ -58,12 +58,12 @@ export default function NotificationsPage() {
             default:
                 text = "You have a new notification.";
         }
-        
+
         // If no valid link, disable the link
         if (!isValidLink) {
             link = '#';
         }
-        
+
         return { text, link, isValidLink };
     };
 

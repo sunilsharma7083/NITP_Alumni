@@ -25,7 +25,7 @@ export default function PostPage() {
                 setLoading(false);
             }
         };
-        
+
         if (id) {
             fetchPost();
         }

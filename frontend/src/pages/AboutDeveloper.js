@@ -109,8 +109,8 @@ const teamContainerVariants = {
 };
 
 const teamMemberVariants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     y: 100,
     scale: 0.8,
     rotateY: -15,
@@ -141,7 +141,7 @@ const teamMemberVariants = {
 };
 
 const avatarVariants = {
-  hidden: { 
+  hidden: {
     scale: 0,
     rotate: -180,
     opacity: 0,
@@ -169,8 +169,8 @@ const avatarVariants = {
 };
 
 const skillVariants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     scale: 0,
     x: -20,
   },
@@ -187,8 +187,8 @@ const skillVariants = {
 };
 
 const socialVariants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     y: 20,
     scale: 0,
   },
@@ -370,7 +370,7 @@ const ParallaxSection = ({ children, offset = 50 }) => {
 
 export default function AboutDeveloper() {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth", }); 
+    window.scrollTo({ top: 0, behavior: "smooth", });
   }, []);
 
   const [activeTab, setActiveTab] = useState("developers");
@@ -759,7 +759,7 @@ export default function AboutDeveloper() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: index * 0.3 + 0.5, duration: 1 }}
                   />
-                  
+
                   <motion.div
                     className="relative inline-block mb-4 sm:mb-6"
                     variants={avatarVariants}
@@ -768,10 +768,10 @@ export default function AboutDeveloper() {
                       className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
                       initial={{ scale: 0, rotate: 0 }}
                       animate={{ scale: 1, rotate: 360 }}
-                      transition={{ 
-                        delay: index * 0.3 + 0.2, 
+                      transition={{
+                        delay: index * 0.3 + 0.2,
                         duration: 0.8,
-                        ease: "easeOut" 
+                        ease: "easeOut"
                       }}
                     />
                     <motion.img
@@ -780,10 +780,10 @@ export default function AboutDeveloper() {
                       className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto border-4 border-white object-cover z-10"
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
-                      transition={{ 
-                        delay: index * 0.3 + 0.4, 
+                      transition={{
+                        delay: index * 0.3 + 0.4,
                         duration: 0.6,
-                        ease: "easeOut" 
+                        ease: "easeOut"
                       }}
                     />
                   </motion.div>
@@ -796,7 +796,7 @@ export default function AboutDeveloper() {
                   >
                     {member.name}
                   </motion.h3>
-                  
+
                   <motion.p
                     className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base"
                     initial={{ opacity: 0, y: 20 }}
@@ -805,7 +805,7 @@ export default function AboutDeveloper() {
                   >
                     {member.role}
                   </motion.p>
-                  
+
                   <motion.p
                     className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base"
                     initial={{ opacity: 0, y: 20 }}
@@ -824,10 +824,10 @@ export default function AboutDeveloper() {
                         initial="hidden"
                         animate="visible"
                         className="px-2 py-1 sm:px-3 sm:py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 text-xs sm:text-sm font-medium rounded-full"
-                        whileHover={{ 
-                          scale: 1.1, 
+                        whileHover={{
+                          scale: 1.1,
                           y: -2,
-                          boxShadow: "0 4px 12px rgba(59, 130, 246, 0.3)" 
+                          boxShadow: "0 4px 12px rgba(59, 130, 246, 0.3)"
                         }}
                       >
                         {skill}
@@ -837,7 +837,7 @@ export default function AboutDeveloper() {
 
                   {/* Social Links */}
                   {member.social && (
-                    <motion.div 
+                    <motion.div
                       className="flex justify-center gap-3 mb-4 sm:mb-6 relative z-10"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -854,11 +854,11 @@ export default function AboutDeveloper() {
                           variants={socialVariants}
                           initial="hidden"
                           animate="visible"
-                          whileHover={{ 
-                            scale: 1.2, 
+                          whileHover={{
+                            scale: 1.2,
                             y: -4,
                             rotate: 5,
-                            boxShadow: "0 8px 20px rgba(0,0,0,0.3)" 
+                            boxShadow: "0 8px 20px rgba(0,0,0,0.3)"
                           }}
                           whileTap={{ scale: 0.9 }}
                           onClick={(e) => {
@@ -882,11 +882,11 @@ export default function AboutDeveloper() {
                             variants={socialVariants}
                             initial="hidden"
                             animate="visible"
-                            whileHover={{ 
-                              scale: 1.2, 
+                            whileHover={{
+                              scale: 1.2,
                               y: -4,
                               rotate: -5,
-                              boxShadow: "0 8px 20px rgba(59, 130, 246, 0.4)" 
+                              boxShadow: "0 8px 20px rgba(59, 130, 246, 0.4)"
                             }}
                             whileTap={{ scale: 0.9 }}
                             onClick={(e) => {
@@ -910,11 +910,11 @@ export default function AboutDeveloper() {
                             variants={socialVariants}
                             initial="hidden"
                             animate="visible"
-                            whileHover={{ 
-                              scale: 1.2, 
+                            whileHover={{
+                              scale: 1.2,
                               y: -4,
                               rotate: 5,
-                              boxShadow: "0 8px 20px rgba(236, 72, 153, 0.4)" 
+                              boxShadow: "0 8px 20px rgba(236, 72, 153, 0.4)"
                             }}
                             whileTap={{ scale: 0.9 }}
                             onClick={(e) => {
@@ -938,11 +938,11 @@ export default function AboutDeveloper() {
                             variants={socialVariants}
                             initial="hidden"
                             animate="visible"
-                            whileHover={{ 
-                              scale: 1.2, 
+                            whileHover={{
+                              scale: 1.2,
                               y: -4,
                               rotate: 5,
-                              boxShadow: "0 8px 20px rgba(168, 85, 247, 0.4)" 
+                              boxShadow: "0 8px 20px rgba(168, 85, 247, 0.4)"
                             }}
                             whileTap={{ scale: 0.9 }}
                             onClick={(e) => {

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { 
-  EyeIcon, 
-  EyeSlashIcon, 
-  UserPlusIcon, 
-  EnvelopeIcon, 
+import {
+  EyeIcon,
+  EyeSlashIcon,
+  UserPlusIcon,
+  EnvelopeIcon,
   LockClosedIcon,
   UserIcon,
   CalendarDaysIcon,
@@ -81,7 +81,7 @@ export default function Register() {
             const dob = new Date(formData.dateOfBirth);
             const today = new Date();
             const minDate = new Date('1900-01-01');
-            
+
             if (dob > today) {
                 newErrors.dateOfBirth = 'Date of birth cannot be in the future';
             } else if (dob < minDate) {
@@ -95,7 +95,7 @@ export default function Register() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         if (!validateForm()) {
             return;
         }
@@ -107,7 +107,7 @@ export default function Register() {
             navigate('/login');
         } catch (error) {
             const message = error.response?.data?.message || 'Registration failed.';
-            
+
             // Handle validation errors from backend
             if (error.response?.data?.errors) {
                 const backendErrors = {};

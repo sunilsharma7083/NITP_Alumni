@@ -63,9 +63,9 @@ export default function CommentSection({ postId, comments: initialComments, onCo
                         />
                     </MentionsInput>
                 </div>
-                <button 
-                    type="submit" 
-                    disabled={loading || !newComment.trim()} 
+                <button
+                    type="submit"
+                    disabled={loading || !newComment.trim()}
                     className="p-2.5 bg-blue-600 rounded-full text-white hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg"
                     style={{ minWidth: '44px', width: '44px', height: '44px', flexShrink: 0 }}
                 >

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  AcademicCapIcon, 
-  UserGroupIcon, 
-  GlobeAltIcon, 
+import {
+  AcademicCapIcon,
+  UserGroupIcon,
+  GlobeAltIcon,
   ArrowRightIcon,
   BuildingOffice2Icon,
   BeakerIcon,
@@ -46,7 +46,7 @@ export default function LandingPage() {
             <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden p-0 m-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600"></div>
                 <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute top-20 left-10 w-32 h-32 bg-secondary-400/20 rounded-full blur-xl animate-float"></div>
@@ -54,7 +54,7 @@ export default function LandingPage() {
                     <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-secondary-300/10 rounded-full blur-2xl animate-float delay-500"></div>
                     <div className="absolute bottom-40 right-1/3 w-20 h-20 bg-accent-300/20 rounded-full blur-lg animate-bounce-subtle delay-1500"></div>
                 </div>
-                
+
                 <div className="relative z-10 text-center text-white max-w-7xl mx-auto px-4">
                     <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-8 py-4 mb-12 animate-fade-in-down shadow-glow relative overflow-hidden">
                         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-secondary-400 to-secondary-600 flex items-center justify-center">
@@ -63,7 +63,7 @@ export default function LandingPage() {
                         <span className="text-sm font-semibold">Join 10,000+ Alumni of NIT Patna</span>
                         <div className="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></div>
                     </div>
-                    
+
                     <div className="space-y-8 mb-12">
                         <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none animate-fade-in-up">
                             <span className="block text-white/95 drop-shadow-lg">Welcome to</span>
@@ -75,7 +75,7 @@ export default function LandingPage() {
                             Alumni Portal - Connecting Excellence
                         </h2>
                     </div>
-                    
+
                     <p className="text-lg md:text-xl lg:text-2xl text-white/85 max-w-4xl mx-auto leading-relaxed mb-16 font-light animate-fade-in-up delay-300">
                         Connect with fellow NITians, share experiences, and build a stronger network.
                         <span className="block text-secondary-200 font-semibold mt-3 text-xl md:text-2xl">Engineering Excellence, Forever United</span>
@@ -131,7 +131,7 @@ export default function LandingPage() {
                         </div>
                     </AnimatedSection>
                 </section>
-                
+
                 <section id="about" className="py-20 bg-gradient-to-br from-neutral-50 to-primary-50/30">
                     <AnimatedSection>
                         <div className="container mx-auto max-w-6xl">
@@ -139,13 +139,13 @@ export default function LandingPage() {
                                 <div>
                                     <h3 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">About NIT Patna</h3>
                                     <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                                        National Institute of Technology Patna, established in 1924 as Bihar College of Engineering, 
-                                        is one of India's premier technical institutions. With nearly a century of excellence in 
-                                        engineering education, NIT Patna has been at the forefront of technological innovation 
+                                        National Institute of Technology Patna, established in 1924 as Bihar College of Engineering,
+                                        is one of India's premier technical institutions. With nearly a century of excellence in
+                                        engineering education, NIT Patna has been at the forefront of technological innovation
                                         and research.
                                     </p>
                                     <p className="text-lg text-neutral-700 leading-relaxed mb-8">
-                                        Our alumni network spans the globe, contributing to breakthrough innovations in technology, 
+                                        Our alumni network spans the globe, contributing to breakthrough innovations in technology,
                                         leading Fortune 500 companies, and driving entrepreneurial ventures that shape the future.
                                     </p>
                                     <div className="flex flex-wrap gap-4">
