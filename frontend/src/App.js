@@ -69,7 +69,7 @@ function App() {
           borderRadius: '12px',
         },
       }} />
-      <Analytics />
+      {process.env.REACT_APP_ENV === 'vercel' && <Analytics />}
     </AuthProvider>
   );
 }

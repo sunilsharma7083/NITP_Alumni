@@ -18,6 +18,9 @@ const User = require('./models/User');
 dotenv.config();
 connectDB();
 const app = express();
+app.get('/', (req, res) => {
+    res.send('Welcome to the NIT Patna Alumni Portal Backend with Real-Time Chat!');
+});
 const server = http.createServer(app);
 app.set('trust proxy', 1);
 // --- SECURITY HEADERS ---
@@ -41,7 +44,8 @@ const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:3001",
   "https://nit-patna-alumni-portal.vercel.app",  // NIT Patna frontend
-  "https://nitpatna-alumni.herokuapp.com"  // Alternative deployment
+  "https://nitpatna-alumni.herokuapp.com",  // Alternative deployment
+  "https://nitp-alumni-1.onrender.com"  // Current Render frontend deployment
 ];
 
 const corsOptions = {
