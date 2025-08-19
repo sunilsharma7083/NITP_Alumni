@@ -53,13 +53,13 @@ export default function Navbar() {
   ];
 
   const guestNavigation = [
-    { name: "About", href: "/about" },
+    { name: "About", href: "/about?tab=institution" },
     {
       name: "Alumni",
       href: "#notable-alumni",
       onClick: (e) => handleNavClick(e, "#notable-alumni"),
     },
-    { name: "Developer", href: "/about" },
+    { name: "Developer", href: "/about?tab=developers" },
     { name: "Privacy Policy", href: "/privacy-policy" },
   ];
 

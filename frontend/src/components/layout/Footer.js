@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div className="text-sm space-y-1">
             <p>
-              &copy; {new Date().getFullYear()} JNV MAA (Mandaphia Alumni Association)
+              &copy; {new Date().getFullYear()} NITP Alumni Association (National Institute of Technology Patna)
             </p>
             <Link
               to="/privacy-policy"

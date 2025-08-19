@@ -1,4 +1,5 @@
 import React, { useState, useEffect, use } from "react";
+import { useSearchParams } from "react-router-dom";
 import {
   motion,
   useAnimation,
@@ -369,11 +370,21 @@ const ParallaxSection = ({ children, offset = 50 }) => {
 };
 
 export default function AboutDeveloper() {
+  const [searchParams] = useSearchParams();
+  const tabParam = searchParams.get('tab');
+  
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth", });
   }, []);
 
-  const [activeTab, setActiveTab] = useState("developers");
+  const [activeTab, setActiveTab] = useState(tabParam || "developers");
+
+  // Update active tab when URL parameter changes
+  useEffect(() => {
+    if (tabParam && ["institution", "developers", "project"].includes(tabParam)) {
+      setActiveTab(tabParam);
+    }
+  }, [tabParam]);
 
   const tabs = [
     { id: "institution", label: "Institution", icon: "academic" },

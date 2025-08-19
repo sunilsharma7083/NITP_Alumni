@@ -275,13 +275,13 @@ exports.approveRegistration = async (req, res) => {
         try {
             await sendEmail({
                 email: user.email,
-                subject: `${user.fullName}, Welcome Home! Your  JNV MAA Account is Now Active 🎉`,
+                subject: `${user.fullName}, Welcome Home! Your NITP Alumni Portal Account is Now Active 🎉`,
                 message: `
     <div style="font-family:Segoe UI, Roboto, sans-serif; max-width:600px; margin:auto; padding:20px; border-radius:8px; background:#f9f9f9; color:#333;">
       
       <h2 style="color:#007bff;">Dear ${user.fullName},</h2>
 
-      <p style="font-size:16px;">🎉 <strong>It's official</strong>, your JNV MAA Portal account has been <span style="color:green;"><strong>approved!</strong></span></p>
+      <p style="font-size:16px;">🎉 <strong>It's official</strong>, your NITP Alumni Portal account has been <span style="color:green;"><strong>approved!</strong></span></p>
 
       <p style="font-size:15px;">For years we had no place to connect. No platform to say:  
         <br><em>"Arey uska number hai kya?"</em><br>  
@@ -315,7 +315,7 @@ exports.approveRegistration = async (req, res) => {
       <p style="font-size:15px;">Welcome back to the family.</p>
 
       <p style="font-weight:bold; color:#444;">– With nostalgia and warmth,<br>  
-      Your Navodaya Alumni Team</p>
+      Your NITP Alumni Team</p>
 
       <hr style="margin:30px 0; border:0; border-top:1px solid #ddd;" />
 

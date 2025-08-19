@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
                 <p><strong>Effective Date:</strong> August 01, 2025</p>
 
                 <p>
-                    At <strong>JNV MAA (Jawahar Navodaya Vidyalaya Mandaphia Alumni Association)</strong>, we are committed to protecting your privacy and handling your personal information with transparency and care. This Privacy Policy describes the types of data we collect, how we use it, and the measures we take to safeguard it.
+                    At <strong>NITP Alumni Association (National Institute of Technology Patna Alumni Association)</strong>, we are committed to protecting your privacy and handling your personal information with transparency and care. This Privacy Policy describes the types of data we collect, how we use it, and the measures we take to safeguard it.
                 </p>
 
                 <h2 className="text-2xl font-bold text-on-surface">1. Information We Collect</h2>
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
 
                 <h2 className="text-2xl font-bold text-on-surface">6. Contact Us</h2>
                 <p>
-                    If you have questions, concerns, or requests related to your data or this policy, please contact the administrator of <strong>JNV MAA</strong> through the official channels provided on the portal.
+                    If you have questions, concerns, or requests related to your data or this policy, please contact the administrator of <strong>NITP Alumni Association</strong> through the official channels provided on the portal.
                 </p>
             </div>
 

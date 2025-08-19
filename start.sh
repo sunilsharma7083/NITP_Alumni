@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# JNV Alumni Portal Startup Script
+# NITP Alumni Portal Startup Script
 # This script starts both the backend and frontend servers
 
-echo "🚀 Starting JNV Alumni Portal..."
+echo "🚀 Starting NITP Alumni Portal..."
 echo ""
 
 # Function to check if a port is in use

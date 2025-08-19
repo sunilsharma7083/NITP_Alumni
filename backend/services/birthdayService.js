@@ -69,10 +69,10 @@ const generateBirthdayEmailTemplate = (user) => {
 
             <div style="background: #fff8f2; border-radius: 10px; padding: 25px; margin-bottom: 25px; border-left: 5px solid #FF9F43;">
                 <h3 style="color: #2c3e50; margin: 0 0 15px 0; font-size: 20px; font-weight: 600;">
-                    From Your Warm Navodaya Family
-                </h3>
-                <p style="color: #555; line-height: 1.6; margin: 0; font-size: 15px;">
-                    We're thinking of all the happy times from our school days at <strong>JNV Mandphia,Chittorgarh</strong>. Those shared moments are truly precious!
+                    From Your NITP Alumni Family
+                </p>
+                <p style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+                    We're thinking of all the happy times from our college days at <strong>National Institute of Technology Patna</strong>. Those shared moments are truly precious!
                     <br><br>
                     May this new year bring you immense happiness, success, and everything wonderful you deserve. We're cheering for you!
                 </p>
@@ -96,7 +96,7 @@ const generateBirthdayEmailTemplate = (user) => {
                           font-size: 16px;
                           box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
                           transition: all 0.3s ease-in-out;">
-                    Connect with Your Navodaya Family! 🎉
+                    Connect with Your NITP Alumni Family! 🎉
                 </a>
             </div>
 
@@ -104,16 +104,16 @@ const generateBirthdayEmailTemplate = (user) => {
 
         <div style="background: #f8faff; padding: 25px 30px; text-align: center; border-top: 1px solid #e9eff5;">
             <p style="color: #7f8c8d; margin: 0 0 10px 0; font-size: 14px;">
-                Warmest wishes from the <strong>JNV MAA-Mandphia Alumni Association</strong>
+                Warmest wishes from the <strong>NITP Alumni Association</strong>
             </p>
             <p style="color: #7f8c8d; margin: 0 0 15px 0; font-size: 13px; font-style: italic;">
                 "Once a Navodain, Always a Navodain!" <span style="color: #FF6B6B;">💙</span>
             </p>
             <div style="border-top: 1px solid #e0e6ed; padding-top: 15px; margin-top: 15px;">
                 <p style="color: #aeb6c1; margin: 0; font-size: 12px;">
-                    Part of your Navodaya Alumni family.<br>
-                    <a href="https://alumni-portal-davjjp.vercel.app/" style="color: #FF6B6B; text-decoration: none; font-weight: 500;">Visit Alumni Portal</a> •
-                    <a href="mailto:jnvchittorgarhalumni@gmail.com" style="color: #FF6B6B; text-decoration: none; font-weight: 500;">Contact Us</a>
+                    Part of your NITP Alumni family.<br>
+                    <a href="https://nitpatna-alumni-portal.com" style="color: #FF6B6B; text-decoration: none; font-weight: 500;">Visit Portal</a> | 
+                    <a href="mailto:nitp.alumni@nitp.ac.in" style="color: #FF6B6B; text-decoration: none; font-weight: 500;">Contact Us</a>
                 </p>
             </div>
         </div>

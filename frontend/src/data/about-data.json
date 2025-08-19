@@ -6,22 +6,22 @@
         "stats": [
             {
                 "label": "Active Alumni",
-                "value": "160+",
+                "value": "1000+",
                 "icon": "users"
             },
             {
                 "label": "Success Stories",
-                "value": "100+",
+                "value": "500+",
                 "icon": "trophy"
             },
             {
                 "label": "Events Hosted",
-                "value": "10+",
+                "value": "50+",
                 "icon": "calendar"
             },
             {
                 "label": "Years of Excellence",
-                "value": "20+",
+                "value": "135+",
                 "icon": "star"
             }
         ]
@@ -89,29 +89,30 @@
             }
         ]
     },
-"aboutInstitution": {
-  "title": "Jawahar Navodaya Vidyalaya, Chittorgarh",
-  "fullName": "Jawahar Navodaya Vidyalaya, Mandaphia, Chittorgarh, Rajasthan",
-  "description": "Welcome to our dream come true – Jawahar Navodaya Vidyalaya, Chittorgarh (Raj). Situated at Mandaphia, 40 km from the district headquarters, it is one of the premier integrated schools under the unique Navodaya Vidyalaya System, which provides quality education to talented students from rural areas.",
-  "history": "Established in 1987 as part of the National Policy on Education – 1986, JNV Chittorgarh was founded with the aim of identifying and nurturing rural talent. Since then, it has grown into a center of academic excellence and holistic development.",
-  "vision": "To bring out the best in rural children through modern, value-based, and holistic education in a residential environment.",
-  "mission": "To provide quality education to talented students, predominantly from rural areas, and enable them to meet the challenges of the modern world while retaining their cultural roots.",
-  "values": [
-    { "title": "Excellence", "description": "Achieving the highest standards in academic and co-curricular pursuits" },
-    { "title": "Discipline", "description": "Fostering a structured and respectful learning environment" },
-    { "title": "Integrity", "description": "Promoting honesty, transparency, and moral strength" },
-    { "title": "Empowerment", "description": "Encouraging self-reliance and leadership in every student" },
-    { "title": "Inclusivity", "description": "Providing equal opportunities to all, regardless of background" }
-  ],
-  "achievements": [
-    "Established in 1987 under Navodaya Vidyalaya Samiti",
-    "Focus on rural student excellence in academics and co-curricular activities",
-    "Fully residential co-ed CBSE-affiliated school",
-    "100% pass rate in CBSE Class XII board exams for three consecutive years (2021–2023)",
-    "100% pass rate in CBSE Class X board exams for three consecutive years (2021–2023)"
-  ]
-},
-
+    "aboutInstitution": {
+        "title": "National Institute of Technology Patna",
+        "fullName": "National Institute of Technology Patna",
+        "description": "Welcome to National Institute of Technology Patna, one of the premier technical institutions in India. Located at Ashok Rajpath, Patna, Bihar, NITP is committed to providing world-class technical education, fostering innovation, and contributing to the nation's technological advancement.",
+        "history": "Founded in 1886 as a survey training school, NIT Patna has evolved through various transformations. It was established as NIT Patna in 2004 under the NIT Act, becoming one of the prestigious National Institutes of Technology. With over a century of legacy, it has grown into a center of technical excellence and innovation.",
+        "vision": "To emerge as a world-class technical institution that produces competent engineers and technologists who contribute significantly to the nation's development and global technological advancement.",
+        "mission": "To provide quality technical education, conduct cutting-edge research, foster innovation and entrepreneurship, and develop technically competent professionals with strong ethical values to meet the challenges of the modern technological world.",
+        "values": [
+            { "title": "Excellence", "description": "Achieving the highest standards in technical education and research" },
+            { "title": "Innovation", "description": "Fostering creativity and technological advancement" },
+            { "title": "Integrity", "description": "Promoting honesty, transparency, and ethical practices in all endeavors" },
+            { "title": "Leadership", "description": "Developing future leaders in technology and engineering" },
+            { "title": "Social Responsibility", "description": "Contributing to society through technology and sustainable development" }
+        ],
+        "achievements": [
+            "Founded in 1886 as a survey training school, rich legacy of over 135 years",
+            "Established as National Institute of Technology in 2004 under NIT Act",
+            "Ranked among top technical institutions in India by NIRF",
+            "Strong alumni network in leading technology companies and research organizations globally",
+            "Active research collaborations with industries and international institutions",
+            "Multiple accreditations including NBA and NAAC",
+            "State-of-the-art infrastructure and modern laboratories"
+        ]
+    },
     "aboutDevelopers": {
         "title": "Meet the Development Team",
         "description": "This alumni portal is crafted with passion and dedication by a team of talented developers who believe in the power of technology to connect people and create meaningful experiences.",
@@ -211,39 +212,37 @@
             }
         ]
     },
-"testimonials": [
-  {
-    "name": "Dr. R.K. Rawal",
-    "role": "Principal, JNV Chittorgarh",
-    "message": "The JNV MAA portal is a visionary step that has made alumni interaction more meaningful. It's a bridge between our past and future.",
-    "avatar": "https://picsum.photos/id/241/200/300"
-  },
-  {
-    "name": "Suman Sharma",
-    "role": "Alumni Coordinator, JNV Chittorgarh",
-    "message": "Engagement has multiplied thanks to this platform. It’s now easier to organize events and keep alumni updated.",
-    "avatar": "https://picsum.photos/id/242/200/300"
-  },
-  {
-    "name": "Amit Joshi",
-    "role": "Alumni (Batch 2010)",
-    "message": "JNV MAA keeps me connected with my roots. I feel proud to see the institution evolve and stay connected with us.",
-    "avatar": "https://picsum.photos/id/243/200/300"
-  }
-],
-
-"contactInfo": {
-  "title": "Get in Touch",
-  "description": "Have questions about the portal or want to contribute? We'd love to hear from you!",
-  "email": "jnvchittorgarhalumni@gmail.com",
-  "phone": "01470-242639",
-  "address": " Mandaphia, Chittorgarh, Rajasthan – 312027",
-  "socialMedia": {
-    "facebook": "https://facebook.com/jnvchittorgarh",
-    "twitter": "https://twitter.com/jnvchittorgarh",
-    "linkedin": "https://linkedin.com/school/jnvchittorgarh",
-    "instagram": "https://instagram.com/jnvchittorgarh"
-  }
-}
-
+    "testimonials": [
+        {
+            "name": "Dr. Pradip Kumar Jain",
+            "role": "Director, NIT Patna",
+            "message": "The NITP Alumni Portal is a remarkable initiative that strengthens our bond with our accomplished alumni. It serves as a bridge between our institution's rich legacy and its bright future.",
+            "avatar": "https://picsum.photos/id/241/200/300"
+        },
+        {
+            "name": "Prof. Rajesh Kumar",
+            "role": "Alumni Coordinator, NIT Patna",
+            "message": "This platform has revolutionized alumni engagement. It's now easier than ever to organize events, share opportunities, and keep our alumni community connected and informed.",
+            "avatar": "https://picsum.photos/id/242/200/300"
+        },
+        {
+            "name": "Amit Kumar Singh",
+            "role": "Alumni (B.Tech CSE 2015)",
+            "message": "The NITP Alumni Portal keeps me connected with my alma mater. I'm proud to see how the institution continues to evolve and maintain strong ties with its graduates.",
+            "avatar": "https://picsum.photos/id/243/200/300"
+        }
+    ],
+    "contactInfo": {
+        "title": "Get in Touch",
+        "description": "Have questions about the portal or want to contribute? We'd love to hear from you!",
+        "email": "nitp.alumni@nitp.ac.in",
+        "phone": "0612-2371715",
+        "address": "Ashok Rajpath, Patna, Bihar – 800005",
+        "socialMedia": {
+            "facebook": "https://facebook.com/nitpatna",
+            "twitter": "https://twitter.com/nitpatna",
+            "linkedin": "https://linkedin.com/school/nitpatna",
+            "instagram": "https://instagram.com/nitpatna"
+        }
+    }
 }

@@ -77,7 +77,7 @@ const sendNotification = async (req, notificationData) => {
       </div>
       
       <div style="background-color: #f0f0f0; text-align: center; padding: 15px; font-size: 13px; color: #777;">
-        JNV Mandphia Alumni Association Portal<br/>
+        National Institute of Technology Patna Alumni Portal<br/>
         <a href="https://alumni-portal-davjjp.vercel.app/" style="color: #888;">Unsubscribe</a> • 
         <a href="https://alumni-portal-davjjp.vercel.app/" style="color: #888;">Visit Portal</a>
       </div>
