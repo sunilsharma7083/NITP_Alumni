@@ -75,8 +75,8 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/JNV_MAA_Alumni_Portal.git
-cd JNV_MAA_Alumni_Portal
+git clone https://github.com/yourusername/NITP_Alumni_Portal.git
+cd NITP_Alumni_Portal
 ```
 
 ### 2. Install Dependencies
@@ -265,3 +265,4 @@ URL: https://nit-patna-alumni-portal.vercel.app/
 ---
 
 **Happy Connecting! 🎓✨**
+# NITP_Alumni
